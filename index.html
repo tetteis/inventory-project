@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Store Inventory App</title>
+</head>
+<body>
+    <nav>
+        <h1>Inventory app</h1>
+      </nav>
+  
+      <main>
+        <form id="add-item-form">
+          <label class="label" for="component-name">Add item</label>
+          <input
+            type="text"
+            class="textbox"
+            required
+            placeholder="New item"
+            id="new-item"
+          />
+          <input type="submit" class="btn" value="Add" />
+        </form>
+  
+        <input
+          type="text"
+          placeholder="Check if item exists"
+          class="textbox"
+          id="check-exists"
+        />
+  
+        <div class="table-container">
+          <table border="1" id="stats-table">
+            <thead>
+              <tr>
+                <th>Item (total: <span id="total">0</span>)</th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+      </main>
+  
+      <script type="module" src="src/index.js"></script>
+</body>
+</html>
