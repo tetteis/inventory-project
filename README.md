@@ -1,6 +1,6 @@
 This is an **Inventory App** app.
 
-It's a web app that allows you to store the inventory of a certain store.
+A web app that allows you to store the inventory of a certain store.
 
 For example:
 
